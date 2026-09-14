@@ -61,7 +61,7 @@ npm login
 
 # 2. package.jsonを更新
 # name: "@kazuya.oda/google-ads-mcp"
-# repository: "https://github.com/Kazy1014/google-ads-mcp"
+# repository: "https://github.com/GoogleAdsMcpOrg/google-ads-mcp"
 
 # 3. ビルド
 npm run build
@@ -252,9 +252,9 @@ SETUP_GUIDE.md
 ### GitHub
 
 ```markdown
-[![GitHub stars](https://img.shields.io/github/stars/Kazy1014/google-ads-mcp.svg)](https://github.com/Kazy1014/google-ads-mcp/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/Kazy1014/google-ads-mcp.svg)](https://github.com/Kazy1014/google-ads-mcp/issues)
-[![License](https://img.shields.io/github/license/Kazy1014/google-ads-mcp.svg)](https://github.com/Kazy1014/google-ads-mcp/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/GoogleAdsMcpOrg/google-ads-mcp.svg)](https://github.com/GoogleAdsMcpOrg/google-ads-mcp/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/GoogleAdsMcpOrg/google-ads-mcp.svg)](https://github.com/GoogleAdsMcpOrg/google-ads-mcp/issues)
+[![License](https://img.shields.io/github/license/GoogleAdsMcpOrg/google-ads-mcp.svg)](https://github.com/GoogleAdsMcpOrg/google-ads-mcp/blob/main/LICENSE)
 ```
 
 ---
