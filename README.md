@@ -231,13 +231,26 @@ MIT
 
 ## 🤝 コントリビューション
 
+### ブランチ運用
+
+| ブランチ | 役割 |
+|---|---|
+| `main` | 本番用ブランチ。リリース済みの内容のみを保持します |
+| `dev` | 開発用プライマリブランチ（デフォルトブランチ）。日常の開発はここに集約します |
+| `feature/*` | 個別の機能・修正用ブランチ。`dev` から分岐します |
+
+- 日常開発: `feature/*` → `dev` へプルリクエスト
+- リリース: `dev` → `main` へプルリクエスト
+- マージは merge commit のみ（squash / rebase マージは無効化しています）
+- `main` / `dev` への直接 push・force push・削除は保護ルールで制限しています
+
 プルリクエスト歓迎！以下の手順で：
 
 1. このリポジトリをフォーク
-2. フィーチャーブランチを作成 (`git checkout -b feature/amazing-feature`)
+2. `dev` からフィーチャーブランチを作成 (`git checkout -b feature/amazing-feature dev`)
 3. 変更をコミット (`git commit -m 'Add amazing feature'`)
 4. ブランチにプッシュ (`git push origin feature/amazing-feature`)
-5. プルリクエストを開く
+5. `dev` 向けにプルリクエストを開く
 
 ## 📄 ライセンス
 
