@@ -52,7 +52,7 @@ npm login
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kazy1014/google-ads-mcp.git"
+    "url": "https://github.com/GoogleAdsMcpOrg/google-ads-mcp.git"
   }
 }
 ```
