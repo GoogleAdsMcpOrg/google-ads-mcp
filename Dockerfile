@@ -1,7 +1,7 @@
 # Google Ads MCP Server - Dockerfile
 # Multi-stage build for optimal size
 
-FROM node:22-alpine AS builder
+FROM node:24.22.1-alpine AS builder
 
 # Set working directory
 WORKDIR /app
@@ -19,7 +19,7 @@ RUN npm ci
 # Build is handled by prepare script in package.json
 
 # Production stage
-FROM node:22-alpine
+FROM node:24.22.1-alpine
 
 # Set working directory
 WORKDIR /app

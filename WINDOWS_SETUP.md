@@ -1,6 +1,6 @@
 # Windowsでの導入
 
-Node.js 22.9以上をインストールし、`node --version`で確認します。[Google Cloud認可](CLOUD_AUTH_SETUP.md)・[OAuth取得](setup-auth.md)・[ビルド](SETUP_GUIDE.md)は共通です。
+Node.js 24.22.1以上をインストールし、`node --version`で確認します。[Google Cloud認可](CLOUD_AUTH_SETUP.md)・[OAuth取得](setup-auth.md)・[ビルド](SETUP_GUIDE.md)は共通です。
 
 Desktopヘルパーの例:
 

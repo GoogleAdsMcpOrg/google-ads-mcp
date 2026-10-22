@@ -4,7 +4,7 @@ Google Ads APIのキーワード調査を、Codex・AGY・Claude Desktopなど�
 
 ## 2026年9月の認証方式に対応（2026-09-30更新）
 
-- Google Ads API v25 / Node.js 22.9以上に対応しました。
+- Google Ads API v25 / Node.js 24.22.1以上に対応しました。
 - APIのアクセス権限はGoogle Cloudプロジェクト単位で管理します。Developer Tokenの新規取得は不要です。
 - キーワードプランナーにはBasic以上のアクセスが必要です。ExplorerではPlanning機能が制限されます。
 - Basic申請に必要なブランド確認は、利用者が自分のアプリ名・連絡先・所有ドメイン・公開ページで行います。このOSSの配布元のブランドや認可は共有できません。
@@ -43,7 +43,7 @@ npm test
 npm run dev
 ```
 
-Node.js 22.9以上を使用します。テストは偽の認証情報とローカルコールバックで実行し、Google Adsへの実リクエストを送りません。
+Node.js 24.22.1以上を使用します。テストは偽の認証情報とローカルコールバックで実行し、Google Adsへの実リクエストを送りません。
 
 ## ブランチ運用
 
