@@ -7,7 +7,7 @@
 - OSSのMCP識別名・設定キーを`google-keyword-planner`へ統一（既存npm名は維持）。
 
 - Google Cloudプロジェクト単位の認可、利用者自身によるブランド・所有ドメイン確認、Basic申請を説明。
-- Google Ads API v25 / Node.js 22以上へ更新。Developer Tokenのユーザー設定を任意化し、ライブラリ向けの非機密互換値を使用。
+- Google Ads API v25 / Node.js 24.22.1以上へ更新（2026-10-20 Node.jsセキュリティリリース対応）。Developer Tokenのユーザー設定を任意化し、ライブラリ向けの非機密互換値を使用。
 - 旧OOBヘルパーをloopbackコールバック・state・PKCEへ変更。トークンは非公開ファイルに保存し、標準出力へ出さない。
 - Desktop OAuthと自分のWeb OAuthクライアントを使うPlaygroundの両方の取得方法を追加。
 - Codex・AGY・Claude Desktopのユーザー共通MCP設定、失効時の再認証と公開前確認を整理。
