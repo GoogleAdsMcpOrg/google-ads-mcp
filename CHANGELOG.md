@@ -5,8 +5,8 @@
 ### Security
 
 - 必要なNode.jsを24.22.1 LTS以上へ更新（2026-10-20 Node.jsセキュリティリリース対応、CVE-2026-111497ほか）。Dockerイメージも`node:24.22.1-alpine`へ更新。
-- 依存関係の下限を引き上げ：`@modelcontextprotocol/sdk` 1.32.0以上、`zod` 4.6.6以上（GHSA-mrhx-c7xc-m3w5）、`tsx` 4.19.3以上。lockfileで`follow-redirects`を1.16.1、`body-parser`を2.4.0へ更新。
-- 既知の問題：google-ads-api 25経由の`stream-json` 1.9.1に中程度の脆弱性（GHSA-528h-pc64-c93x、GHSA-hqr4-qq8f-hg3x、GHSA-mjw6-4jj6-33hc）が残っている。修正版（3.6.0以上）はgoogle-ads-apiが読み込む`streamers/StreamArray.js`を削除しており、互換性のある修正版はまだ無い。google-ads-apiではストリーミング検索とそのエラー応答の解析にのみ使われ、本サーバーが使う`query`・キーワードプランAPIの経路では使われない。後続の対応で追跡する。
+- 依存関係の下限を引き上げ：`@modelcontextprotocol/sdk` 1.32.0以上、`zod` 4.6.6以上（GHSA-mrhx-c7xc-m3w5）、`tsx` 4.19.3以上。lockfileで`follow-redirects`を1.16.1、`body-parser`を2.4.0、`fast-uri`を3.1.9、`ip-address`を10.7.4、`qs`を6.16.1、`zod`を4.6.7へ更新。
+- 既知の問題：google-ads-api 25経由の`stream-json` 1.9.1に中程度の脆弱性（GHSA-528h-pc64-c93x、GHSA-hqr4-qq8f-hg3x、GHSA-mjw6-4jj6-33hc）が残っている。修正版（3.6.0以上）はgoogle-ads-apiが読み込む`streamers/StreamArray.js`を削除しており、互換性のある修正版はまだ無い。google-ads-apiではストリーミング検索と、検索系API（本サーバーでは起動時の接続テストの）のエラー応答の解析に使われる。キーワードプランAPIの経路では使われない。後続の対応で追跡する。
 
 ### Updated
 
