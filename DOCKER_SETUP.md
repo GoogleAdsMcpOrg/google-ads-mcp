@@ -121,7 +121,7 @@ EOF
 
 ```dockerfile
 # ビルドステージ: TypeScript のコンパイル
-FROM node:20-alpine AS builder
+FROM node:24.22.1-alpine AS builder
 WORKDIR /app
 COPY package*.json tsconfig.json ./
 RUN npm ci
@@ -129,7 +129,7 @@ COPY src/ ./src/
 RUN npm run build
 
 # 本番ステージ: 本番用依存関係のみ
-FROM node:20-alpine
+FROM node:24.22.1-alpine
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci --omit=dev
