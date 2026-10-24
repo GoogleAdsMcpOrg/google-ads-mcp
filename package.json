@@ -47,7 +47,7 @@
     "cross-platform"
   ],
   "engines": {
-    "node": ">=22.9.0"
+    "node": ">=24.22.1"
   },
   "os": [
     "darwin",
@@ -62,7 +62,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/node": "^22.8.6",
+    "@types/node": "^24.19.2",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3"
   }

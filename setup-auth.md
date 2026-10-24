@@ -6,7 +6,7 @@ Google Cloud認可・ブランド確認・Basic申請は[CLOUD_AUTH_SETUP.md](CL
 
 1. 自分のGoogle CloudプロジェクトのGoogle Auth Platform → Clientsで「Desktop app」のOAuthクライアントを作成します。
 2. 作成時にJSONをダウンロードし、リポジトリ外の非公開ディレクトリへ保存します。
-3. Node.js 22以上でビルド済みソースから次を実行します。出力先の親ディレクトリは先に作成してください。
+3. Node.js 24.22.1以上でビルド済みソースから次を実行します。出力先の親ディレクトリは先に作成してください。
 
 ```bash
 npm run get-refresh-token -- --credentials /private/path/desktop-oauth.json --output /private/path/.env
