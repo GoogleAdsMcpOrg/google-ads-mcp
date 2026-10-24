@@ -2,6 +2,11 @@
 
 ## [Unreleased] - 2026-09-30
 
+### Security
+
+- 必要なNode.jsを24.22.1 LTS以上へ更新（2026-10-20 Node.jsセキュリティリリース対応、CVE-2026-111497ほか）。Dockerイメージも`node:24.22.1-alpine`へ更新。
+- 脆弱なバージョンを除外するため依存関係の下限を引き上げ（`@modelcontextprotocol/sdk` ^1.32.0、`zod` ^4.6.6、`tsx` ^4.19.3）。lockfileで`follow-redirects`を1.16.1へ更新。
+
 ### Updated
 
 - OSSのMCP識別名・設定キーを`google-keyword-planner`へ統一（既存npm名は維持）。
