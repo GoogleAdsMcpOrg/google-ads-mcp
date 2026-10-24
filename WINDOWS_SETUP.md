@@ -5,7 +5,7 @@
 ## 📋 前提条件
 
 - Windows 10 / 11
-- Node.js 18以上 ([ダウンロード](https://nodejs.org/))
+- Node.js 24.22.1以上 ([ダウンロード](https://nodejs.org/))
 - Claude Desktop for Windows
 - Google Adsアカウント
 
