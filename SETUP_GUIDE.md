@@ -1,6 +1,6 @@
 # ローカル導入
 
-先に[CLOUD_AUTH_SETUP.md](CLOUD_AUTH_SETUP.md)と[setup-auth.md](setup-auth.md)で、自分のプロジェクトのAPI権限・OAuth認証情報を取得します。Node.js 22.9以上が必要です。
+先に[CLOUD_AUTH_SETUP.md](CLOUD_AUTH_SETUP.md)と[setup-auth.md](setup-auth.md)で、自分のプロジェクトのAPI権限・OAuth認証情報を取得します。Node.js 24.22.1以上が必要です。
 
 ## ビルド
 
