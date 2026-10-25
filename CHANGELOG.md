@@ -21,6 +21,13 @@
 
 GitHubソースの更新です。npm/Docker Hubのリリースは別作業です。
 
+## [1.1.2] - 2026-10-25
+
+### Security
+- 必要なNode.jsを24.22.1 LTS以上へ更新（2026-10-20 Node.jsセキュリティリリース対応、CVE-2026-111497ほか）。Dockerイメージも`node:24.22.1-alpine`へ更新。
+- 依存関係の下限を引き上げ：`@modelcontextprotocol/sdk` 1.32.0以上、`zod` 4.6.6以上（GHSA-mrhx-c7xc-m3w5）、`tsx` 4.19.3以上。`package-lock.json`をコミット対象に変更。`overrides`でgaxios 6配下の`uuid`を11.1.1以上に固定（このリポジトリからのインストール（Dockerイメージなど）に適用され、npm経由の利用者には適用されない）。
+- 既知の問題：google-ads-api 21経由の`stream-json` 1.9.1に中程度の脆弱性（GHSA-528h-pc64-c93x、GHSA-hqr4-qq8f-hg3x、GHSA-mjw6-4jj6-33hc）が残っている。互換性のある修正版はまだ無い。用途はGoogle Ads APIのエラーレスポンスの解析のみ。後続の対応で追跡する。
+
 ## [1.0.0] - 2025-10-11
 
 ### Platforms
