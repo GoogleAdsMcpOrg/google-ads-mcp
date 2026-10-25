@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [1.1.2] - 2026-10-25
 
 ### Security
 - 必要なNode.jsを24.22.1 LTS以上へ更新（2026-10-20 Node.jsセキュリティリリース対応、CVE-2026-111497ほか）。Dockerイメージも`node:24.22.1-alpine`へ更新。
